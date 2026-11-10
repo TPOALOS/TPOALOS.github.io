@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tpoalos.github.io/sitemap.xml

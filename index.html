@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TPOALOS: small, sharp command-line tools in pure Python</title>
+<meta name="description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<link rel="canonical" href="https://tpoalos.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TPOALOS: small, sharp command-line tools">
+<meta property="og:description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta property="og:url" content="https://tpoalos.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TPOALOS: small, sharp command-line tools">
+<meta name="twitter:description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta name="color-scheme" content="light dark">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Command-line tools by TPOALOS",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "hostguard",
+    "description": "Read-only hardening auditor for Linux and macOS: 76 checks, score, HTML report, drift detection, offline root audits",
+    "codeRepository": "https://github.com/TPOALOS/hostguard",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "portlens",
+    "description": "Defensive attack-surface scanner (nmap-style): scope guard, rate caps, banner/TLS checks, policy and scan diff",
+    "codeRepository": "https://github.com/TPOALOS/portlens",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "pcaplens",
+    "description": "Pure-Python pcap/pcapng analyzer: TCP reassembly, scan/beacon/DNS-tunnel/credential detectors, CTF stream tools",
+    "codeRepository": "https://github.com/TPOALOS/pcaplens",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "ctfhost",
+    "description": "Dependency-free platform for hosting your own CTF: scrypt auth, CSRF, dynamic scoring, first blood, scoreboard",
+    "codeRepository": "https://github.com/TPOALOS/ctfhost",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "pocketledger",
+    "description": "Private, local, dependency-free personal finance ledger: bank CSV import, budgets, subscription detection, net worth, loans, HTML reports",
+    "codeRepository": "https://github.com/TPOALOS/pocketledger",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "cmdguard",
+    "description": "Allow, ask or deny shell commands proposed by an AI agent: a safety net and Claude Code PreToolUse hook, never runs the command",
+    "codeRepository": "https://github.com/TPOALOS/cmdguard",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "mcpaudit",
+    "description": "Audit MCP server configs for risky settings: literal secrets, unpinned npx downloads, shells, plain-http remotes, broad file access",
+    "codeRepository": "https://github.com/TPOALOS/mcpaudit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "injectscan",
+    "description": "Find hidden instructions aimed at AI assistants: invisible Unicode (decoded), hidden HTML, comments, padded text, encoded payloads",
+    "codeRepository": "https://github.com/TPOALOS/injectscan",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "ctxpack",
+    "description": "Pack a project into one prompt-ready file for an AI assistant: respects .gitignore, leaves out secrets, redacts tokens, strips invisible Unicode",
+    "codeRepository": "https://github.com/TPOALOS/ctxpack",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "tokcount",
+    "description": "Estimate tokens, context-window fit and cost for prompts, files and folders, offline; you supply model sizes and prices",
+    "codeRepository": "https://github.com/TPOALOS/tokcount",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 11,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "backupcheck",
+    "description": "Check that your backups exist, are fresh, plausible and readable: age, size drop, archive and checksum verification",
+    "codeRepository": "https://github.com/TPOALOS/backupcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 12,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "jobwatch",
+    "description": "Notice when a cron job silently stops running: wrap the command, check later. Timeouts and overlap protection, no server",
+    "codeRepository": "https://github.com/TPOALOS/jobwatch",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 13,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "diskwatch",
+    "description": "Warn before a disk is full: space and inode levels, days-until-full forecast, biggest items",
+    "codeRepository": "https://github.com/TPOALOS/diskwatch",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 14,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "expirywatch",
+    "description": "Never miss an expiry date: passports, domains, certificates, insurance in one plain text file with warnings",
+    "codeRepository": "https://github.com/TPOALOS/expirywatch",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 15,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "certwatch",
+    "description": "TLS certificate expiry checker for your own hosts, cron-friendly",
+    "codeRepository": "https://github.com/TPOALOS/certwatch",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 16,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "cronnext",
+    "description": "Validate and explain cron expressions and list next run times, no dependencies",
+    "codeRepository": "https://github.com/TPOALOS/cronnext",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 17,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "dupefind",
+    "description": "Find duplicate files by content and see the reclaimable space. Report only, deletes nothing",
+    "codeRepository": "https://github.com/TPOALOS/dupefind",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 18,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "exifstrip",
+    "description": "See and remove hidden photo metadata (GPS, camera serial, owner) from JPEG and PNG files; keeps colour profile and rotation",
+    "codeRepository": "https://github.com/TPOALOS/exifstrip",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 19,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "secretscan",
+    "description": "Dependency-free scanner for leaked secrets in files or staged git changes, with baselines",
+    "codeRepository": "https://github.com/TPOALOS/secretscan",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 20,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "githook-guard",
+    "description": "One-command pre-commit hook that blocks secrets, .env and key files, oversized files and personal e-mail commits",
+    "codeRepository": "https://github.com/TPOALOS/githook-guard",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 21,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "gitidentity-audit",
+    "description": "Find personal e-mail addresses leaked in git history across repos (read-only, stdlib-only Python)",
+    "codeRepository": "https://github.com/TPOALOS/gitidentity-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 22,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "logscrub",
+    "description": "Redact secrets, emails, IPs and tokens from logs before sharing them",
+    "codeRepository": "https://github.com/TPOALOS/logscrub",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 23,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "shellhist-scrub",
+    "description": "Find and mask passwords, tokens and credentials typed into your zsh/bash history",
+    "codeRepository": "https://github.com/TPOALOS/shellhist-scrub",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 24,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "envdrift",
+    "description": "Detect drift between .env.example and .env files without ever printing values",
+    "codeRepository": "https://github.com/TPOALOS/envdrift",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 25,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "pwlint",
+    "description": "Judge a password honestly and generate strong ones, offline: never prints or sends the password",
+    "codeRepository": "https://github.com/TPOALOS/pwlint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 26,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "listenwatch",
+    "description": "See what is listening on your machine and who can reach it: flags risky exposed services and new listeners",
+    "codeRepository": "https://github.com/TPOALOS/listenwatch",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 27,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "sshcfg-audit",
+    "description": "Offline auditor for sshd_config and ssh client config with fix suggestions",
+    "codeRepository": "https://github.com/TPOALOS/sshcfg-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 28,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "sshkey-audit",
+    "description": "Read-only audit of ~/.ssh: keys without passphrase, weak key types, loose permissions, risky authorized_keys",
+    "codeRepository": "https://github.com/TPOALOS/sshkey-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 29,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "authlog-summary",
+    "description": "Read-only SSH auth log summarizer: failed logins per IP, targeted users, odd successes",
+    "codeRepository": "https://github.com/TPOALOS/authlog-summary",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 30,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "fimcheck",
+    "description": "Simple file integrity monitor: SHA-256 baseline and change report",
+    "codeRepository": "https://github.com/TPOALOS/fimcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 31,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "permaudit",
+    "description": "Read-only file permission auditor: world-writable, SUID, loose keys and .env files",
+    "codeRepository": "https://github.com/TPOALOS/permaudit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 32,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "headercheck",
+    "description": "Grade the HTTP security headers of a site you operate, with fixes",
+    "codeRepository": "https://github.com/TPOALOS/headercheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 33,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "jwtlint",
+    "description": "Offline JWT inspector that flags alg none, missing expiry and sensitive claims, without verifying signatures",
+    "codeRepository": "https://github.com/TPOALOS/jwtlint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 34,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "mailtriage",
+    "description": "Offline e-mail header triage: SPF/DKIM/DMARC, spoofing signs, relay path and a risk verdict",
+    "codeRepository": "https://github.com/TPOALOS/mailtriage",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 35,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "urlcheck",
+    "description": "Spot phishing signs in a URL without opening it: look-alike domains, @ tricks, obfuscated IPs",
+    "codeRepository": "https://github.com/TPOALOS/urlcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 36,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "repolint",
+    "description": "Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links",
+    "codeRepository": "https://github.com/TPOALOS/repolint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 37,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "gha-audit",
+    "description": "Offline security auditor for GitHub Actions workflows: unpinned actions, script injection, risky triggers",
+    "codeRepository": "https://github.com/TPOALOS/gha-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 38,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "dockerfile-audit",
+    "description": "Offline security linter for Dockerfiles: root user, unpinned images, baked-in secrets, curl|sh",
+    "codeRepository": "https://github.com/TPOALOS/dockerfile-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 39,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "reqpin",
+    "description": "Supply-chain audit for pip requirements files: unpinned versions, missing hashes, typosquat lookalikes",
+    "codeRepository": "https://github.com/TPOALOS/reqpin",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 40,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "backtestlint",
+    "description": "Find look-ahead bias and data leakage in Python backtest code: 14 AST-based rules, notebooks, SARIF",
+    "codeRepository": "https://github.com/TPOALOS/backtestlint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 41,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "riskmetrics",
+    "description": "Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns",
+    "codeRepository": "https://github.com/TPOALOS/riskmetrics",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  }
+ ]
+}
+</script>
+<style>
+:root{--bg:#fafaf7;--fg:#16191d;--muted:#5d646b;--card:#fff;--line:#dcded6;--accent:#0f766e;--code:#f1f3ee}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1317;--fg:#e8eaed;--muted:#9aa3ad;--card:#171c22;--line:#2a3139;--accent:#5eead4;--code:#10151a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:var(--accent)}main,header,footer{max-width:1040px;margin:0 auto;padding:0 18px}
+header{padding-top:56px;padding-bottom:12px}h1{font-size:clamp(30px,6vw,48px);line-height:1.1;margin:0 0 10px}
+.lead{font-size:19px;color:var(--muted);max-width:720px;margin:0 0 18px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.facts li{border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
+nav.jump{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+h2{font-size:24px;margin:44px 0 4px}.blurb{color:var(--muted);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:18px}.card p{margin:0 0 10px;color:var(--muted);font-size:15px}
+pre{margin:0;background:var(--code);border-radius:8px;padding:8px 10px;font-size:12.5px;white-space:pre-wrap;word-break:break-all}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.principles{margin:12px 0 0;padding-left:20px}footer{padding-top:36px;padding-bottom:48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<h1>Small, sharp command-line tools.</h1>
+<p class="lead">Each one solves a single real problem, in pure Python with no dependencies: nothing to install, nothing to audit, nothing that phones home. They check, warn and report; none of them attacks anything.</p>
+<ul class="facts"><li>41 tools</li><li>0 dependencies</li><li>tested, CI on Linux and macOS</li><li>MIT</li></ul>
+<nav class="jump" aria-label="Sections"><a href="#start">Start here</a> <a href="#ai">AI assistants and agents</a> <a href="#ops">Things that quietly break</a> <a href="#privacy">Privacy and leaks</a> <a href="#security">Security checks for your own systems</a> <a href="#dev">Developer hygiene</a> <a href="#finance">Finance</a></nav>
+</header>
+<main>
+<section id="start"><h2>Start here</h2><p class="blurb">The bigger projects: each one is a full tool with its own documentation.</p><div class="grid">
+<article class="card" id="hostguard"><h3><a href="https://github.com/TPOALOS/hostguard">hostguard</a></h3><p>Read-only hardening auditor for Linux and macOS: 76 checks, score, HTML report, drift detection, offline root audits</p><pre><code>pip install git+https://github.com/TPOALOS/hostguard</code></pre></article>
+<article class="card" id="portlens"><h3><a href="https://github.com/TPOALOS/portlens">portlens</a></h3><p>Defensive attack-surface scanner (nmap-style): scope guard, rate caps, banner/TLS checks, policy and scan diff</p><pre><code>pip install git+https://github.com/TPOALOS/portlens</code></pre></article>
+<article class="card" id="pcaplens"><h3><a href="https://github.com/TPOALOS/pcaplens">pcaplens</a></h3><p>Pure-Python pcap/pcapng analyzer: TCP reassembly, scan/beacon/DNS-tunnel/credential detectors, CTF stream tools</p><pre><code>pip install git+https://github.com/TPOALOS/pcaplens</code></pre></article>
+<article class="card" id="ctfhost"><h3><a href="https://github.com/TPOALOS/ctfhost">ctfhost</a></h3><p>Dependency-free platform for hosting your own CTF: scrypt auth, CSRF, dynamic scoring, first blood, scoreboard</p><pre><code>pip install git+https://github.com/TPOALOS/ctfhost</code></pre></article>
+<article class="card" id="pocketledger"><h3><a href="https://github.com/TPOALOS/pocketledger">pocketledger</a></h3><p>Private, local, dependency-free personal finance ledger: bank CSV import, budgets, subscription detection, net worth, loans, HTML reports</p><pre><code>pip install git+https://github.com/TPOALOS/pocketledger</code></pre></article>
+</div></section>
+<section id="ai"><h2>AI assistants and agents</h2><p class="blurb">Keep an AI agent from doing damage, and keep hidden instructions and secrets out of what it reads.</p><div class="grid">
+<article class="card" id="cmdguard"><h3><a href="https://github.com/TPOALOS/cmdguard">cmdguard</a></h3><p>Allow, ask or deny shell commands proposed by an AI agent: a safety net and Claude Code PreToolUse hook, never runs the command</p><pre><code>pip install git+https://github.com/TPOALOS/cmdguard</code></pre></article>
+<article class="card" id="mcpaudit"><h3><a href="https://github.com/TPOALOS/mcpaudit">mcpaudit</a></h3><p>Audit MCP server configs for risky settings: literal secrets, unpinned npx downloads, shells, plain-http remotes, broad file access</p><pre><code>pip install git+https://github.com/TPOALOS/mcpaudit</code></pre></article>
+<article class="card" id="injectscan"><h3><a href="https://github.com/TPOALOS/injectscan">injectscan</a></h3><p>Find hidden instructions aimed at AI assistants: invisible Unicode (decoded), hidden HTML, comments, padded text, encoded payloads</p><pre><code>pip install git+https://github.com/TPOALOS/injectscan</code></pre></article>
+<article class="card" id="ctxpack"><h3><a href="https://github.com/TPOALOS/ctxpack">ctxpack</a></h3><p>Pack a project into one prompt-ready file for an AI assistant: respects .gitignore, leaves out secrets, redacts tokens, strips invisible Unicode</p><pre><code>pip install git+https://github.com/TPOALOS/ctxpack</code></pre></article>
+<article class="card" id="tokcount"><h3><a href="https://github.com/TPOALOS/tokcount">tokcount</a></h3><p>Estimate tokens, context-window fit and cost for prompts, files and folders, offline; you supply model sizes and prices</p><pre><code>pip install git+https://github.com/TPOALOS/tokcount</code></pre></article>
+</div></section>
+<section id="ops"><h2>Things that quietly break, until they cost you</h2><p class="blurb">Backups, cron jobs, disks, certificates and expiry dates.</p><div class="grid">
+<article class="card" id="backupcheck"><h3><a href="https://github.com/TPOALOS/backupcheck">backupcheck</a></h3><p>Check that your backups exist, are fresh, plausible and readable: age, size drop, archive and checksum verification</p><pre><code>pip install git+https://github.com/TPOALOS/backupcheck</code></pre></article>
+<article class="card" id="jobwatch"><h3><a href="https://github.com/TPOALOS/jobwatch">jobwatch</a></h3><p>Notice when a cron job silently stops running: wrap the command, check later. Timeouts and overlap protection, no server</p><pre><code>pip install git+https://github.com/TPOALOS/jobwatch</code></pre></article>
+<article class="card" id="diskwatch"><h3><a href="https://github.com/TPOALOS/diskwatch">diskwatch</a></h3><p>Warn before a disk is full: space and inode levels, days-until-full forecast, biggest items</p><pre><code>pip install git+https://github.com/TPOALOS/diskwatch</code></pre></article>
+<article class="card" id="expirywatch"><h3><a href="https://github.com/TPOALOS/expirywatch">expirywatch</a></h3><p>Never miss an expiry date: passports, domains, certificates, insurance in one plain text file with warnings</p><pre><code>pip install git+https://github.com/TPOALOS/expirywatch</code></pre></article>
+<article class="card" id="certwatch"><h3><a href="https://github.com/TPOALOS/certwatch">certwatch</a></h3><p>TLS certificate expiry checker for your own hosts, cron-friendly</p><pre><code>pip install git+https://github.com/TPOALOS/certwatch</code></pre></article>
+<article class="card" id="cronnext"><h3><a href="https://github.com/TPOALOS/cronnext">cronnext</a></h3><p>Validate and explain cron expressions and list next run times, no dependencies</p><pre><code>pip install git+https://github.com/TPOALOS/cronnext</code></pre></article>
+<article class="card" id="dupefind"><h3><a href="https://github.com/TPOALOS/dupefind">dupefind</a></h3><p>Find duplicate files by content and see the reclaimable space. Report only, deletes nothing</p><pre><code>pip install git+https://github.com/TPOALOS/dupefind</code></pre></article>
+</div></section>
+<section id="privacy"><h2>Privacy and leaks</h2><p class="blurb">Photos, commits, logs, shell history, passwords and .env files.</p><div class="grid">
+<article class="card" id="exifstrip"><h3><a href="https://github.com/TPOALOS/exifstrip">exifstrip</a></h3><p>See and remove hidden photo metadata (GPS, camera serial, owner) from JPEG and PNG files; keeps colour profile and rotation</p><pre><code>pip install git+https://github.com/TPOALOS/exifstrip</code></pre></article>
+<article class="card" id="secretscan"><h3><a href="https://github.com/TPOALOS/secretscan">secretscan</a></h3><p>Dependency-free scanner for leaked secrets in files or staged git changes, with baselines</p><pre><code>pip install git+https://github.com/TPOALOS/secretscan</code></pre></article>
+<article class="card" id="githook-guard"><h3><a href="https://github.com/TPOALOS/githook-guard">githook-guard</a></h3><p>One-command pre-commit hook that blocks secrets, .env and key files, oversized files and personal e-mail commits</p><pre><code>pip install git+https://github.com/TPOALOS/githook-guard</code></pre></article>
+<article class="card" id="gitidentity-audit"><h3><a href="https://github.com/TPOALOS/gitidentity-audit">gitidentity-audit</a></h3><p>Find personal e-mail addresses leaked in git history across repos (read-only, stdlib-only Python)</p><pre><code>pip install git+https://github.com/TPOALOS/gitidentity-audit</code></pre></article>
+<article class="card" id="logscrub"><h3><a href="https://github.com/TPOALOS/logscrub">logscrub</a></h3><p>Redact secrets, emails, IPs and tokens from logs before sharing them</p><pre><code>pip install git+https://github.com/TPOALOS/logscrub</code></pre></article>
+<article class="card" id="shellhist-scrub"><h3><a href="https://github.com/TPOALOS/shellhist-scrub">shellhist-scrub</a></h3><p>Find and mask passwords, tokens and credentials typed into your zsh/bash history</p><pre><code>pip install git+https://github.com/TPOALOS/shellhist-scrub</code></pre></article>
+<article class="card" id="envdrift"><h3><a href="https://github.com/TPOALOS/envdrift">envdrift</a></h3><p>Detect drift between .env.example and .env files without ever printing values</p><pre><code>pip install git+https://github.com/TPOALOS/envdrift</code></pre></article>
+<article class="card" id="pwlint"><h3><a href="https://github.com/TPOALOS/pwlint">pwlint</a></h3><p>Judge a password honestly and generate strong ones, offline: never prints or sends the password</p><pre><code>pip install git+https://github.com/TPOALOS/pwlint</code></pre></article>
+</div></section>
+<section id="security"><h2>Security checks for your own systems</h2><p class="blurb">SSH, open ports, file integrity, HTTP headers, JWTs, phishing.</p><div class="grid">
+<article class="card" id="listenwatch"><h3><a href="https://github.com/TPOALOS/listenwatch">listenwatch</a></h3><p>See what is listening on your machine and who can reach it: flags risky exposed services and new listeners</p><pre><code>pip install git+https://github.com/TPOALOS/listenwatch</code></pre></article>
+<article class="card" id="sshcfg-audit"><h3><a href="https://github.com/TPOALOS/sshcfg-audit">sshcfg-audit</a></h3><p>Offline auditor for sshd_config and ssh client config with fix suggestions</p><pre><code>pip install git+https://github.com/TPOALOS/sshcfg-audit</code></pre></article>
+<article class="card" id="sshkey-audit"><h3><a href="https://github.com/TPOALOS/sshkey-audit">sshkey-audit</a></h3><p>Read-only audit of ~/.ssh: keys without passphrase, weak key types, loose permissions, risky authorized_keys</p><pre><code>pip install git+https://github.com/TPOALOS/sshkey-audit</code></pre></article>
+<article class="card" id="authlog-summary"><h3><a href="https://github.com/TPOALOS/authlog-summary">authlog-summary</a></h3><p>Read-only SSH auth log summarizer: failed logins per IP, targeted users, odd successes</p><pre><code>pip install git+https://github.com/TPOALOS/authlog-summary</code></pre></article>
+<article class="card" id="fimcheck"><h3><a href="https://github.com/TPOALOS/fimcheck">fimcheck</a></h3><p>Simple file integrity monitor: SHA-256 baseline and change report</p><pre><code>pip install git+https://github.com/TPOALOS/fimcheck</code></pre></article>
+<article class="card" id="permaudit"><h3><a href="https://github.com/TPOALOS/permaudit">permaudit</a></h3><p>Read-only file permission auditor: world-writable, SUID, loose keys and .env files</p><pre><code>pip install git+https://github.com/TPOALOS/permaudit</code></pre></article>
+<article class="card" id="headercheck"><h3><a href="https://github.com/TPOALOS/headercheck">headercheck</a></h3><p>Grade the HTTP security headers of a site you operate, with fixes</p><pre><code>pip install git+https://github.com/TPOALOS/headercheck</code></pre></article>
+<article class="card" id="jwtlint"><h3><a href="https://github.com/TPOALOS/jwtlint">jwtlint</a></h3><p>Offline JWT inspector that flags alg none, missing expiry and sensitive claims, without verifying signatures</p><pre><code>pip install git+https://github.com/TPOALOS/jwtlint</code></pre></article>
+<article class="card" id="mailtriage"><h3><a href="https://github.com/TPOALOS/mailtriage">mailtriage</a></h3><p>Offline e-mail header triage: SPF/DKIM/DMARC, spoofing signs, relay path and a risk verdict</p><pre><code>pip install git+https://github.com/TPOALOS/mailtriage</code></pre></article>
+<article class="card" id="urlcheck"><h3><a href="https://github.com/TPOALOS/urlcheck">urlcheck</a></h3><p>Spot phishing signs in a URL without opening it: look-alike domains, @ tricks, obfuscated IPs</p><pre><code>pip install git+https://github.com/TPOALOS/urlcheck</code></pre></article>
+</div></section>
+<section id="dev"><h2>Developer hygiene</h2><p class="blurb">Repositories, CI workflows, Dockerfiles and requirements files.</p><div class="grid">
+<article class="card" id="repolint"><h3><a href="https://github.com/TPOALOS/repolint">repolint</a></h3><p>Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links</p><pre><code>pip install git+https://github.com/TPOALOS/repolint</code></pre></article>
+<article class="card" id="gha-audit"><h3><a href="https://github.com/TPOALOS/gha-audit">gha-audit</a></h3><p>Offline security auditor for GitHub Actions workflows: unpinned actions, script injection, risky triggers</p><pre><code>pip install git+https://github.com/TPOALOS/gha-audit</code></pre></article>
+<article class="card" id="dockerfile-audit"><h3><a href="https://github.com/TPOALOS/dockerfile-audit">dockerfile-audit</a></h3><p>Offline security linter for Dockerfiles: root user, unpinned images, baked-in secrets, curl|sh</p><pre><code>pip install git+https://github.com/TPOALOS/dockerfile-audit</code></pre></article>
+<article class="card" id="reqpin"><h3><a href="https://github.com/TPOALOS/reqpin">reqpin</a></h3><p>Supply-chain audit for pip requirements files: unpinned versions, missing hashes, typosquat lookalikes</p><pre><code>pip install git+https://github.com/TPOALOS/reqpin</code></pre></article>
+</div></section>
+<section id="finance"><h2>Finance</h2><p class="blurb">Backtest leakage and honest performance statistics.</p><div class="grid">
+<article class="card" id="backtestlint"><h3><a href="https://github.com/TPOALOS/backtestlint">backtestlint</a></h3><p>Find look-ahead bias and data leakage in Python backtest code: 14 AST-based rules, notebooks, SARIF</p><pre><code>pip install git+https://github.com/TPOALOS/backtestlint</code></pre></article>
+<article class="card" id="riskmetrics"><h3><a href="https://github.com/TPOALOS/riskmetrics">riskmetrics</a></h3><p>Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns</p><pre><code>pip install git+https://github.com/TPOALOS/riskmetrics</code></pre></article>
+</div></section>
+<section id="principles">
+<h2>How they are built</h2>
+<ul class="principles">
+<li><strong>Zero dependencies.</strong> Python's standard library only.</li>
+<li><strong>Read-only by default.</strong> When a tool can change something it previews first, keeps a backup or writes a copy, and never deletes on its own.</li>
+<li><strong>Honest about limits.</strong> These are checks, not oracles: a clean result means "nothing found", never "proven safe".</li>
+<li><strong>Private by construction.</strong> No telemetry and no accounts; tools that must use the network only talk to hosts you name.</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>All source on <a href="https://github.com/TPOALOS">github.com/TPOALOS</a>. Issues and pull requests are welcome. Page generated from the live repository list (see <a href="https://github.com/TPOALOS/TPOALOS.github.io">build.py</a>).</p>
+</footer>
+</body>
+</html>
