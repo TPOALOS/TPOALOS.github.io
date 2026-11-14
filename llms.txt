@@ -38,6 +38,8 @@
 - [shellhist-scrub](https://github.com/TPOALOS/shellhist-scrub): Find and mask passwords, tokens and credentials typed into your zsh/bash history
 - [envdrift](https://github.com/TPOALOS/envdrift): Detect drift between .env.example and .env files without ever printing values
 - [pwlint](https://github.com/TPOALOS/pwlint): Judge a password honestly and generate strong ones, offline: never prints or sends the password
+- [pwned-local](https://github.com/TPOALOS/pwned-local): Check passwords or SHA-1 hashes against a local HIBP-style sorted hash file with binary search, no network
+- [pwhash-audit](https://github.com/TPOALOS/pwhash-audit): Audit shadow, htpasswd and user:hash files for weak schemes, empty passwords, reuse and bad permissions, no cracking
 
 ## Security checks for your own systems
 
@@ -54,6 +56,15 @@
 - [pathaudit](https://github.com/TPOALOS/pathaudit): Audit your PATH for current-dir hijack, writable or foreign-owned dirs, symlinks, duplicates and shadowed commands
 - [symlinkcheck](https://github.com/TPOALOS/symlinkcheck): Scan a directory tree for dangling, escaping, looping and sensitive-target symlinks without following them
 - [sudoers-audit](https://github.com/TPOALOS/sudoers-audit): Lint sudoers files for NOPASSWD:ALL, broad rules, wildcards, shell-escape commands and risky Defaults
+- [elfcheck](https://github.com/TPOALOS/elfcheck): checksec-style ELF hardening checker (PIE, NX, RELRO, canary, FORTIFY, RPATH) that never executes anything
+- [iocgrep](https://github.com/TPOALOS/iocgrep): Scan logs and files for IOCs (IPs, CIDRs, domains, URLs, hashes), defang-aware, with file hashing and --json
+
+## Cloud, APIs and DNS
+
+- [planguard](https://github.com/TPOALOS/planguard): Report risky Terraform plan changes before apply: destroy/replace of critical resources, open ports, public S3, encryption off
+- [iamlint](https://github.com/TPOALOS/iamlint): Offline linter for AWS IAM, S3, KMS and SQS policy JSON: wildcards, public principals, PassRole, privilege-escalation combos
+- [apispec-lint](https://github.com/TPOALOS/apispec-lint): Security lint of OpenAPI 3.x and Swagger 2.0 JSON specs: http servers, missing auth, weak OAuth, sensitive fields
+- [zonelint](https://github.com/TPOALOS/zonelint): Offline lint of BIND DNS zone files: SOA/NS sanity, CNAME conflicts, SPF/DMARC/CAA, takeover-prone targets
 
 ## Web servers and e-mail
 
@@ -74,6 +85,8 @@
 - [gha-audit](https://github.com/TPOALOS/gha-audit): Offline security auditor for GitHub Actions workflows: unpinned actions, script injection, risky triggers
 - [dockerfile-audit](https://github.com/TPOALOS/dockerfile-audit): Offline security linter for Dockerfiles: root user, unpinned images, baked-in secrets, curl|sh
 - [reqpin](https://github.com/TPOALOS/reqpin): Supply-chain audit for pip requirements files: unpinned versions, missing hashes, typosquat lookalikes
+- [npmscan](https://github.com/TPOALOS/npmscan): Offline audit of package.json and npm lockfiles for install scripts, git/http deps, odd registries, typosquats
+- [signcheck](https://github.com/TPOALOS/signcheck): Audit git commit-signing hygiene: signature status, unsigned merges, identity/date mismatches, CI exit codes
 
 ## Finance
 
