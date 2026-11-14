@@ -1,0 +1,81 @@
+# TPOALOS
+
+> Small command-line tools in pure Python with zero dependencies. Defensive and protective only. MIT licensed.
+
+## Start here
+
+- [hostguard](https://github.com/TPOALOS/hostguard): Read-only hardening auditor for Linux and macOS: 76 checks, score, HTML report, drift detection, offline root audits
+- [portlens](https://github.com/TPOALOS/portlens): Defensive attack-surface scanner (nmap-style): scope guard, rate caps, banner/TLS checks, policy and scan diff
+- [pcaplens](https://github.com/TPOALOS/pcaplens): Pure-Python pcap/pcapng analyzer: TCP reassembly, scan/beacon/DNS-tunnel/credential detectors, CTF stream tools
+- [ctfhost](https://github.com/TPOALOS/ctfhost): Dependency-free platform for hosting your own CTF: scrypt auth, CSRF, dynamic scoring, first blood, scoreboard
+- [pocketledger](https://github.com/TPOALOS/pocketledger): Private, local, dependency-free personal finance ledger: bank CSV import, budgets, subscription detection, net worth, loans, HTML reports
+
+## AI assistants and agents
+
+- [cmdguard](https://github.com/TPOALOS/cmdguard): Allow, ask or deny shell commands proposed by an AI agent: a safety net and Claude Code PreToolUse hook, never runs the command
+- [mcpaudit](https://github.com/TPOALOS/mcpaudit): Audit MCP server configs for risky settings: literal secrets, unpinned npx downloads, shells, plain-http remotes, broad file access
+- [injectscan](https://github.com/TPOALOS/injectscan): Find hidden instructions aimed at AI assistants: invisible Unicode (decoded), hidden HTML, comments, padded text, encoded payloads
+- [ctxpack](https://github.com/TPOALOS/ctxpack): Pack a project into one prompt-ready file for an AI assistant: respects .gitignore, leaves out secrets, redacts tokens, strips invisible Unicode
+- [tokcount](https://github.com/TPOALOS/tokcount): Estimate tokens, context-window fit and cost for prompts, files and folders, offline; you supply model sizes and prices
+
+## Things that quietly break, until they cost you
+
+- [backupcheck](https://github.com/TPOALOS/backupcheck): Check that your backups exist, are fresh, plausible and readable: age, size drop, archive and checksum verification
+- [jobwatch](https://github.com/TPOALOS/jobwatch): Notice when a cron job silently stops running: wrap the command, check later. Timeouts and overlap protection, no server
+- [diskwatch](https://github.com/TPOALOS/diskwatch): Warn before a disk is full: space and inode levels, days-until-full forecast, biggest items
+- [expirywatch](https://github.com/TPOALOS/expirywatch): Never miss an expiry date: passports, domains, certificates, insurance in one plain text file with warnings
+- [certwatch](https://github.com/TPOALOS/certwatch): TLS certificate expiry checker for your own hosts, cron-friendly
+- [cronnext](https://github.com/TPOALOS/cronnext): Validate and explain cron expressions and list next run times, no dependencies
+- [dupefind](https://github.com/TPOALOS/dupefind): Find duplicate files by content and see the reclaimable space. Report only, deletes nothing
+
+## Privacy and leaks
+
+- [exifstrip](https://github.com/TPOALOS/exifstrip): See and remove hidden photo metadata (GPS, camera serial, owner) from JPEG and PNG files; keeps colour profile and rotation
+- [secretscan](https://github.com/TPOALOS/secretscan): Dependency-free scanner for leaked secrets in files or staged git changes, with baselines
+- [githook-guard](https://github.com/TPOALOS/githook-guard): One-command pre-commit hook that blocks secrets, .env and key files, oversized files and personal e-mail commits
+- [gitidentity-audit](https://github.com/TPOALOS/gitidentity-audit): Find personal e-mail addresses leaked in git history across repos (read-only, stdlib-only Python)
+- [logscrub](https://github.com/TPOALOS/logscrub): Redact secrets, emails, IPs and tokens from logs before sharing them
+- [shellhist-scrub](https://github.com/TPOALOS/shellhist-scrub): Find and mask passwords, tokens and credentials typed into your zsh/bash history
+- [envdrift](https://github.com/TPOALOS/envdrift): Detect drift between .env.example and .env files without ever printing values
+- [pwlint](https://github.com/TPOALOS/pwlint): Judge a password honestly and generate strong ones, offline: never prints or sends the password
+
+## Security checks for your own systems
+
+- [listenwatch](https://github.com/TPOALOS/listenwatch): See what is listening on your machine and who can reach it: flags risky exposed services and new listeners
+- [sshcfg-audit](https://github.com/TPOALOS/sshcfg-audit): Offline auditor for sshd_config and ssh client config with fix suggestions
+- [sshkey-audit](https://github.com/TPOALOS/sshkey-audit): Read-only audit of ~/.ssh: keys without passphrase, weak key types, loose permissions, risky authorized_keys
+- [authlog-summary](https://github.com/TPOALOS/authlog-summary): Read-only SSH auth log summarizer: failed logins per IP, targeted users, odd successes
+- [fimcheck](https://github.com/TPOALOS/fimcheck): Simple file integrity monitor: SHA-256 baseline and change report
+- [permaudit](https://github.com/TPOALOS/permaudit): Read-only file permission auditor: world-writable, SUID, loose keys and .env files
+- [headercheck](https://github.com/TPOALOS/headercheck): Grade the HTTP security headers of a site you operate, with fixes
+- [jwtlint](https://github.com/TPOALOS/jwtlint): Offline JWT inspector that flags alg none, missing expiry and sensitive claims, without verifying signatures
+- [mailtriage](https://github.com/TPOALOS/mailtriage): Offline e-mail header triage: SPF/DKIM/DMARC, spoofing signs, relay path and a risk verdict
+- [urlcheck](https://github.com/TPOALOS/urlcheck): Spot phishing signs in a URL without opening it: look-alike domains, @ tricks, obfuscated IPs
+- [pathaudit](https://github.com/TPOALOS/pathaudit): Audit your PATH for current-dir hijack, writable or foreign-owned dirs, symlinks, duplicates and shadowed commands
+- [symlinkcheck](https://github.com/TPOALOS/symlinkcheck): Scan a directory tree for dangling, escaping, looping and sensitive-target symlinks without following them
+- [sudoers-audit](https://github.com/TPOALOS/sudoers-audit): Lint sudoers files for NOPASSWD:ALL, broad rules, wildcards, shell-escape commands and risky Defaults
+
+## Web servers and e-mail
+
+- [nginxcheck](https://github.com/TPOALOS/nginxcheck): Lint nginx configs for TLS weaknesses, missing headers, alias traversal and proxy_pass SSRF smells
+- [cookiecheck](https://github.com/TPOALOS/cookiecheck): Offline lint of Set-Cookie headers, HTTP responses and HAR files: missing flags, prefix violations, broad Domain
+- [mailauth-lint](https://github.com/TPOALOS/mailauth-lint): Offline linter for SPF, DMARC and DKIM DNS record text: lookup limits, weak policy, short keys
+- [dmarc-report](https://github.com/TPOALOS/dmarc-report): Summarise DMARC aggregate report XML (also .gz/.zip) offline: per-source alignment, failing senders, pass rate
+
+## Untrusted files
+
+- [zipcheck](https://github.com/TPOALOS/zipcheck): Inspect zip/tar archives for zip-slip, hostile links, special files, setuid and bombs without extracting
+- [csvguard](https://github.com/TPOALOS/csvguard): Scan CSV/TSV for spreadsheet formula injection with cell coordinates; writes an atomic sanitized copy
+- [trojansrc](https://github.com/TPOALOS/trojansrc): Scan source files for Trojan Source attacks: bidi controls, invisible characters, homoglyph identifiers
+
+## Developer hygiene
+
+- [repolint](https://github.com/TPOALOS/repolint): Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links
+- [gha-audit](https://github.com/TPOALOS/gha-audit): Offline security auditor for GitHub Actions workflows: unpinned actions, script injection, risky triggers
+- [dockerfile-audit](https://github.com/TPOALOS/dockerfile-audit): Offline security linter for Dockerfiles: root user, unpinned images, baked-in secrets, curl|sh
+- [reqpin](https://github.com/TPOALOS/reqpin): Supply-chain audit for pip requirements files: unpinned versions, missing hashes, typosquat lookalikes
+
+## Finance
+
+- [backtestlint](https://github.com/TPOALOS/backtestlint): Find look-ahead bias and data leakage in Python backtest code: 14 AST-based rules, notebooks, SARIF
+- [riskmetrics](https://github.com/TPOALOS/riskmetrics): Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns

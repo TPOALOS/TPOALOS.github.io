@@ -162,7 +162,14 @@ def main():
                  '  <url><loc>%s</loc><lastmod>%s</lastmod></url>\n</urlset>\n' % (SITE, today))
     with open(os.path.join(HERE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\nSitemap: %ssitemap.xml\n" % SITE)
-    print("wrote index.html (%d KB), sitemap.xml, robots.txt" % (len(page) // 1024))
+    lines = ["# %s" % OWNER, "", "> Small command-line tools in pure Python with zero dependencies. Defensive and protective only. MIT licensed.", ""]
+    for gid, title, blurb, names in GROUPS:
+        lines += ["## %s" % title, ""]
+        lines += ["- [%s](%s): %s" % (n, repos[n]["url"], short(repos[n]["description"])) for n in names]
+        lines.append("")
+    with open(os.path.join(HERE, "llms.txt"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines))
+    print("wrote index.html (%d KB), sitemap.xml, robots.txt, llms.txt" % (len(page) // 1024))
 
 
 if __name__ == "__main__":
