@@ -18,7 +18,7 @@ SITE = "https://tpoalos.github.io/"
 HERE = os.path.dirname(os.path.abspath(__file__))
 GROUPS = [
     ("start", "Start here", "The bigger projects: each one is a full tool with its own documentation.",
-     ["hostguard", "portlens", "pcaplens", "ctfhost", "pocketledger"]),
+     ["hostguard", "detectlite", "portlens", "pcaplens", "ctfhost", "pocketledger"]),
     ("ai", "AI assistants and agents", "Keep an AI agent from doing damage, and keep hidden instructions and secrets out of what it reads.",
      ["cmdguard", "mcpaudit", "injectscan", "ctxpack", "tokcount"]),
     ("ops", "Things that quietly break, until they cost you", "Backups, cron jobs, disks, certificates and expiry dates.",

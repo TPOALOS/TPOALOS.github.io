@@ -5,6 +5,7 @@
 ## Start here
 
 - [hostguard](https://github.com/TPOALOS/hostguard): Read-only hardening auditor for Linux and macOS: 76 checks, score, HTML report, drift detection, offline root audits
+- [detectlite](https://github.com/TPOALOS/detectlite): Sigma-compatible (subset) detection rule engine for local logs, with ATT&CK-mapped alerts and a tested starter ruleset
 - [portlens](https://github.com/TPOALOS/portlens): Defensive attack-surface scanner (nmap-style): scope guard, rate caps, banner/TLS checks, policy and scan diff
 - [pcaplens](https://github.com/TPOALOS/pcaplens): Pure-Python pcap/pcapng analyzer: TCP reassembly, scan/beacon/DNS-tunnel/credential detectors, CTF stream tools
 - [ctfhost](https://github.com/TPOALOS/ctfhost): Dependency-free platform for hosting your own CTF: scrypt auth, CSRF, dynamic scoring, first blood, scoreboard
