@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TPOALOS: small, sharp command-line tools in pure Python</title>
-<meta name="description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta name="description" content="51 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <link rel="canonical" href="https://tpoalos.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TPOALOS: small, sharp command-line tools">
-<meta property="og:description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta property="og:description" content="51 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <meta property="og:url" content="https://tpoalos.github.io/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TPOALOS: small, sharp command-line tools">
-<meta name="twitter:description" content="41 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta name="twitter:description" content="51 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <meta name="color-scheme" content="light dark">
 <script type="application/ld+json">
 {
@@ -585,6 +585,166 @@
    "position": 36,
    "item": {
     "@type": "SoftwareSourceCode",
+    "name": "pathaudit",
+    "description": "Audit your PATH for current-dir hijack, writable or foreign-owned dirs, symlinks, duplicates and shadowed commands",
+    "codeRepository": "https://github.com/TPOALOS/pathaudit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 37,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "symlinkcheck",
+    "description": "Scan a directory tree for dangling, escaping, looping and sensitive-target symlinks without following them",
+    "codeRepository": "https://github.com/TPOALOS/symlinkcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 38,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "sudoers-audit",
+    "description": "Lint sudoers files for NOPASSWD:ALL, broad rules, wildcards, shell-escape commands and risky Defaults",
+    "codeRepository": "https://github.com/TPOALOS/sudoers-audit",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 39,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "nginxcheck",
+    "description": "Lint nginx configs for TLS weaknesses, missing headers, alias traversal and proxy_pass SSRF smells",
+    "codeRepository": "https://github.com/TPOALOS/nginxcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 40,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "cookiecheck",
+    "description": "Offline lint of Set-Cookie headers, HTTP responses and HAR files: missing flags, prefix violations, broad Domain",
+    "codeRepository": "https://github.com/TPOALOS/cookiecheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 41,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "mailauth-lint",
+    "description": "Offline linter for SPF, DMARC and DKIM DNS record text: lookup limits, weak policy, short keys",
+    "codeRepository": "https://github.com/TPOALOS/mailauth-lint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 42,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "dmarc-report",
+    "description": "Summarise DMARC aggregate report XML (also .gz/.zip) offline: per-source alignment, failing senders, pass rate",
+    "codeRepository": "https://github.com/TPOALOS/dmarc-report",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 43,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "zipcheck",
+    "description": "Inspect zip/tar archives for zip-slip, hostile links, special files, setuid and bombs without extracting",
+    "codeRepository": "https://github.com/TPOALOS/zipcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 44,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "csvguard",
+    "description": "Scan CSV/TSV for spreadsheet formula injection with cell coordinates; writes an atomic sanitized copy",
+    "codeRepository": "https://github.com/TPOALOS/csvguard",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 45,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "trojansrc",
+    "description": "Scan source files for Trojan Source attacks: bidi controls, invisible characters, homoglyph identifiers",
+    "codeRepository": "https://github.com/TPOALOS/trojansrc",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 46,
+   "item": {
+    "@type": "SoftwareSourceCode",
     "name": "repolint",
     "description": "Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links",
     "codeRepository": "https://github.com/TPOALOS/repolint",
@@ -598,7 +758,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 37,
+   "position": 47,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "gha-audit",
@@ -614,7 +774,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 38,
+   "position": 48,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "dockerfile-audit",
@@ -630,7 +790,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 39,
+   "position": 49,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "reqpin",
@@ -646,7 +806,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 40,
+   "position": 50,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "backtestlint",
@@ -662,7 +822,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 41,
+   "position": 51,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "riskmetrics",
@@ -702,8 +862,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 <header>
 <h1>Small, sharp command-line tools.</h1>
 <p class="lead">Each one solves a single real problem, in pure Python with no dependencies: nothing to install, nothing to audit, nothing that phones home. They check, warn and report; none of them attacks anything.</p>
-<ul class="facts"><li>41 tools</li><li>0 dependencies</li><li>tested, CI on Linux and macOS</li><li>MIT</li></ul>
-<nav class="jump" aria-label="Sections"><a href="#start">Start here</a> <a href="#ai">AI assistants and agents</a> <a href="#ops">Things that quietly break</a> <a href="#privacy">Privacy and leaks</a> <a href="#security">Security checks for your own systems</a> <a href="#dev">Developer hygiene</a> <a href="#finance">Finance</a></nav>
+<ul class="facts"><li>51 tools</li><li>0 dependencies</li><li>tested, CI on Linux and macOS</li><li>MIT</li></ul>
+<nav class="jump" aria-label="Sections"><a href="#start">Start here</a> <a href="#ai">AI assistants and agents</a> <a href="#ops">Things that quietly break</a> <a href="#privacy">Privacy and leaks</a> <a href="#security">Security checks for your own systems</a> <a href="#web">Web servers and e-mail</a> <a href="#files">Untrusted files</a> <a href="#dev">Developer hygiene</a> <a href="#finance">Finance</a></nav>
 </header>
 <main>
 <section id="start"><h2>Start here</h2><p class="blurb">The bigger projects: each one is a full tool with its own documentation.</p><div class="grid">
@@ -750,6 +910,20 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 <article class="card" id="jwtlint"><h3><a href="https://github.com/TPOALOS/jwtlint">jwtlint</a></h3><p>Offline JWT inspector that flags alg none, missing expiry and sensitive claims, without verifying signatures</p><pre><code>pip install git+https://github.com/TPOALOS/jwtlint</code></pre></article>
 <article class="card" id="mailtriage"><h3><a href="https://github.com/TPOALOS/mailtriage">mailtriage</a></h3><p>Offline e-mail header triage: SPF/DKIM/DMARC, spoofing signs, relay path and a risk verdict</p><pre><code>pip install git+https://github.com/TPOALOS/mailtriage</code></pre></article>
 <article class="card" id="urlcheck"><h3><a href="https://github.com/TPOALOS/urlcheck">urlcheck</a></h3><p>Spot phishing signs in a URL without opening it: look-alike domains, @ tricks, obfuscated IPs</p><pre><code>pip install git+https://github.com/TPOALOS/urlcheck</code></pre></article>
+<article class="card" id="pathaudit"><h3><a href="https://github.com/TPOALOS/pathaudit">pathaudit</a></h3><p>Audit your PATH for current-dir hijack, writable or foreign-owned dirs, symlinks, duplicates and shadowed commands</p><pre><code>pip install git+https://github.com/TPOALOS/pathaudit</code></pre></article>
+<article class="card" id="symlinkcheck"><h3><a href="https://github.com/TPOALOS/symlinkcheck">symlinkcheck</a></h3><p>Scan a directory tree for dangling, escaping, looping and sensitive-target symlinks without following them</p><pre><code>pip install git+https://github.com/TPOALOS/symlinkcheck</code></pre></article>
+<article class="card" id="sudoers-audit"><h3><a href="https://github.com/TPOALOS/sudoers-audit">sudoers-audit</a></h3><p>Lint sudoers files for NOPASSWD:ALL, broad rules, wildcards, shell-escape commands and risky Defaults</p><pre><code>pip install git+https://github.com/TPOALOS/sudoers-audit</code></pre></article>
+</div></section>
+<section id="web"><h2>Web servers and e-mail</h2><p class="blurb">nginx configs, cookies, SPF, DKIM and DMARC.</p><div class="grid">
+<article class="card" id="nginxcheck"><h3><a href="https://github.com/TPOALOS/nginxcheck">nginxcheck</a></h3><p>Lint nginx configs for TLS weaknesses, missing headers, alias traversal and proxy_pass SSRF smells</p><pre><code>pip install git+https://github.com/TPOALOS/nginxcheck</code></pre></article>
+<article class="card" id="cookiecheck"><h3><a href="https://github.com/TPOALOS/cookiecheck">cookiecheck</a></h3><p>Offline lint of Set-Cookie headers, HTTP responses and HAR files: missing flags, prefix violations, broad Domain</p><pre><code>pip install git+https://github.com/TPOALOS/cookiecheck</code></pre></article>
+<article class="card" id="mailauth-lint"><h3><a href="https://github.com/TPOALOS/mailauth-lint">mailauth-lint</a></h3><p>Offline linter for SPF, DMARC and DKIM DNS record text: lookup limits, weak policy, short keys</p><pre><code>pip install git+https://github.com/TPOALOS/mailauth-lint</code></pre></article>
+<article class="card" id="dmarc-report"><h3><a href="https://github.com/TPOALOS/dmarc-report">dmarc-report</a></h3><p>Summarise DMARC aggregate report XML (also .gz/.zip) offline: per-source alignment, failing senders, pass rate</p><pre><code>pip install git+https://github.com/TPOALOS/dmarc-report</code></pre></article>
+</div></section>
+<section id="files"><h2>Untrusted files</h2><p class="blurb">Archives, spreadsheets and source code that may be hostile.</p><div class="grid">
+<article class="card" id="zipcheck"><h3><a href="https://github.com/TPOALOS/zipcheck">zipcheck</a></h3><p>Inspect zip/tar archives for zip-slip, hostile links, special files, setuid and bombs without extracting</p><pre><code>pip install git+https://github.com/TPOALOS/zipcheck</code></pre></article>
+<article class="card" id="csvguard"><h3><a href="https://github.com/TPOALOS/csvguard">csvguard</a></h3><p>Scan CSV/TSV for spreadsheet formula injection with cell coordinates; writes an atomic sanitized copy</p><pre><code>pip install git+https://github.com/TPOALOS/csvguard</code></pre></article>
+<article class="card" id="trojansrc"><h3><a href="https://github.com/TPOALOS/trojansrc">trojansrc</a></h3><p>Scan source files for Trojan Source attacks: bidi controls, invisible characters, homoglyph identifiers</p><pre><code>pip install git+https://github.com/TPOALOS/trojansrc</code></pre></article>
 </div></section>
 <section id="dev"><h2>Developer hygiene</h2><p class="blurb">Repositories, CI workflows, Dockerfiles and requirements files.</p><div class="grid">
 <article class="card" id="repolint"><h3><a href="https://github.com/TPOALOS/repolint">repolint</a></h3><p>Is this project ready to share? Offline checklist for README, licence, tracked secrets, tests, CI and broken README links</p><pre><code>pip install git+https://github.com/TPOALOS/repolint</code></pre></article>
