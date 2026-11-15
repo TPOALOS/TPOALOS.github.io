@@ -36,7 +36,8 @@ GROUPS = [
      ["zipcheck", "csvguard", "trojansrc"]),
     ("dev", "Developer hygiene", "Repositories, CI workflows, Dockerfiles and requirements files.",
      ["repolint", "gha-audit", "dockerfile-audit", "reqpin", "npmscan", "signcheck"]),
-    ("finance", "Finance", "Backtest leakage and honest performance statistics.", ["backtestlint", "riskmetrics"]),
+    ("finance", "Finance", "Backtest leakage, honest performance statistics, edge testing and cost stress.",
+     ["backtestlint", "riskmetrics", "edgelab", "costmap", "strategy-graveyard"]),
 ]
 SKIP = {OWNER, OWNER + ".github.io", "hashguard", "mini-tools"}
 
