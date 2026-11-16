@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TPOALOS: small, sharp command-line tools in pure Python</title>
-<meta name="description" content="65 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta name="description" content="68 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <link rel="canonical" href="https://tpoalos.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TPOALOS: small, sharp command-line tools">
-<meta property="og:description" content="65 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta property="og:description" content="68 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <meta property="og:url" content="https://tpoalos.github.io/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TPOALOS: small, sharp command-line tools">
-<meta name="twitter:description" content="65 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
+<meta name="twitter:description" content="68 small command-line tools in pure Python with zero dependencies: AI agent safety, backups, privacy, security audits, personal finance. Open source, MIT licensed, tested.">
 <meta name="color-scheme" content="light dark">
 <script type="application/ld+json">
 {
@@ -1001,6 +1001,22 @@
    "position": 62,
    "item": {
     "@type": "SoftwareSourceCode",
+    "name": "ohlcvlint",
+    "description": "Lint OHLCV price data for bad bars, duplicates, gaps, unadjusted splits, spikes and stale prices",
+    "codeRepository": "https://github.com/TPOALOS/ohlcvlint",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 63,
+   "item": {
+    "@type": "SoftwareSourceCode",
     "name": "riskmetrics",
     "description": "Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns",
     "codeRepository": "https://github.com/TPOALOS/riskmetrics",
@@ -1014,7 +1030,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 63,
+   "position": 64,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "edgelab",
@@ -1030,7 +1046,7 @@
   },
   {
    "@type": "ListItem",
-   "position": 64,
+   "position": 65,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "costmap",
@@ -1046,7 +1062,39 @@
   },
   {
    "@type": "ListItem",
-   "position": 65,
+   "position": 66,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "slipcheck",
+    "description": "Measure real slippage and fee cost of your fills with a bootstrap interval and check your backtest cost assumption",
+    "codeRepository": "https://github.com/TPOALOS/slipcheck",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 67,
+   "item": {
+    "@type": "SoftwareSourceCode",
+    "name": "ruinsim",
+    "description": "Bootstrap your trade list: drawdown and risk of ruin by position size, with Kelly and block resampling",
+    "codeRepository": "https://github.com/TPOALOS/ruinsim",
+    "programmingLanguage": "Python",
+    "license": "https://opensource.org/licenses/MIT",
+    "author": {
+     "@type": "Person",
+     "name": "TPOALOS"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 68,
    "item": {
     "@type": "SoftwareSourceCode",
     "name": "strategy-graveyard",
@@ -1086,7 +1134,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 <header>
 <h1>Small, sharp command-line tools.</h1>
 <p class="lead">Each one solves a single real problem, in pure Python with no dependencies: nothing to install, nothing to audit, nothing that phones home. They check, warn and report; none of them attacks anything.</p>
-<ul class="facts"><li>65 tools</li><li>0 dependencies</li><li>tested, CI on Linux and macOS</li><li>MIT</li></ul>
+<ul class="facts"><li>68 tools</li><li>0 dependencies</li><li>tested, CI on Linux and macOS</li><li>MIT</li></ul>
 <nav class="jump" aria-label="Sections"><a href="#start">Start here</a> <a href="#ai">AI assistants and agents</a> <a href="#ops">Things that quietly break</a> <a href="#privacy">Privacy and leaks</a> <a href="#security">Security checks for your own systems</a> <a href="#cloud">Cloud</a> <a href="#web">Web servers and e-mail</a> <a href="#files">Untrusted files</a> <a href="#dev">Developer hygiene</a> <a href="#finance">Finance</a></nav>
 </header>
 <main>
@@ -1168,11 +1216,14 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 <article class="card" id="npmscan"><h3><a href="https://github.com/TPOALOS/npmscan">npmscan</a></h3><p>Offline audit of package.json and npm lockfiles for install scripts, git/http deps, odd registries, typosquats</p><pre><code>pip install git+https://github.com/TPOALOS/npmscan</code></pre></article>
 <article class="card" id="signcheck"><h3><a href="https://github.com/TPOALOS/signcheck">signcheck</a></h3><p>Audit git commit-signing hygiene: signature status, unsigned merges, identity/date mismatches, CI exit codes</p><pre><code>pip install git+https://github.com/TPOALOS/signcheck</code></pre></article>
 </div></section>
-<section id="finance"><h2>Finance</h2><p class="blurb">Backtest leakage, honest performance statistics, edge testing and cost stress.</p><div class="grid">
+<section id="finance"><h2>Finance</h2><p class="blurb">Data quality, backtest leakage, honest performance statistics, edge testing, real costs and risk of ruin.</p><div class="grid">
 <article class="card" id="backtestlint"><h3><a href="https://github.com/TPOALOS/backtestlint">backtestlint</a></h3><p>Find look-ahead bias and data leakage in Python backtest code: 14 AST-based rules, notebooks, SARIF</p><pre><code>pip install git+https://github.com/TPOALOS/backtestlint</code></pre></article>
+<article class="card" id="ohlcvlint"><h3><a href="https://github.com/TPOALOS/ohlcvlint">ohlcvlint</a></h3><p>Lint OHLCV price data for bad bars, duplicates, gaps, unadjusted splits, spikes and stale prices</p><pre><code>pip install git+https://github.com/TPOALOS/ohlcvlint</code></pre></article>
 <article class="card" id="riskmetrics"><h3><a href="https://github.com/TPOALOS/riskmetrics">riskmetrics</a></h3><p>Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns</p><pre><code>pip install git+https://github.com/TPOALOS/riskmetrics</code></pre></article>
 <article class="card" id="edgelab"><h3><a href="https://github.com/TPOALOS/edgelab">edgelab</a></h3><p>Trial ledger and honest edge report for trading ideas: counts every variant, tests a holdout, stresses costs</p><pre><code>pip install git+https://github.com/TPOALOS/edgelab</code></pre></article>
 <article class="card" id="costmap"><h3><a href="https://github.com/TPOALOS/costmap">costmap</a></h3><p>Map net Sharpe across transaction costs and volatility regimes with no look-ahead labels</p><pre><code>pip install git+https://github.com/TPOALOS/costmap</code></pre></article>
+<article class="card" id="slipcheck"><h3><a href="https://github.com/TPOALOS/slipcheck">slipcheck</a></h3><p>Measure real slippage and fee cost of your fills with a bootstrap interval and check your backtest cost assumption</p><pre><code>pip install git+https://github.com/TPOALOS/slipcheck</code></pre></article>
+<article class="card" id="ruinsim"><h3><a href="https://github.com/TPOALOS/ruinsim">ruinsim</a></h3><p>Bootstrap your trade list: drawdown and risk of ruin by position size, with Kelly and block resampling</p><pre><code>pip install git+https://github.com/TPOALOS/ruinsim</code></pre></article>
 <article class="card" id="strategy-graveyard"><h3><a href="https://github.com/TPOALOS/strategy-graveyard">strategy-graveyard</a></h3><p>Classic trading rules on null random-walk markets: what does luck look like, and does your history beat it?</p><pre><code>pip install git+https://github.com/TPOALOS/strategy-graveyard</code></pre></article>
 </div></section>
 <section id="principles">

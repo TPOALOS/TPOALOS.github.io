@@ -92,7 +92,10 @@
 ## Finance
 
 - [backtestlint](https://github.com/TPOALOS/backtestlint): Find look-ahead bias and data leakage in Python backtest code: 14 AST-based rules, notebooks, SARIF
+- [ohlcvlint](https://github.com/TPOALOS/ohlcvlint): Lint OHLCV price data for bad bars, duplicates, gaps, unadjusted splits, spikes and stale prices
 - [riskmetrics](https://github.com/TPOALOS/riskmetrics): Performance statistics with bootstrap intervals and multiple-testing corrections: deflated Sharpe, Holm, drawdowns
 - [edgelab](https://github.com/TPOALOS/edgelab): Trial ledger and honest edge report for trading ideas: counts every variant, tests a holdout, stresses costs
 - [costmap](https://github.com/TPOALOS/costmap): Map net Sharpe across transaction costs and volatility regimes with no look-ahead labels
+- [slipcheck](https://github.com/TPOALOS/slipcheck): Measure real slippage and fee cost of your fills with a bootstrap interval and check your backtest cost assumption
+- [ruinsim](https://github.com/TPOALOS/ruinsim): Bootstrap your trade list: drawdown and risk of ruin by position size, with Kelly and block resampling
 - [strategy-graveyard](https://github.com/TPOALOS/strategy-graveyard): Classic trading rules on null random-walk markets: what does luck look like, and does your history beat it?
